@@ -2,6 +2,24 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'audiowide';
+    src: url('fonts/audiowide-regular-webfont.woff2') format('woff2'),
+        url('fonts/audiowide-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_condensed';
+    src: url('fonts/robotocondensed-variablefont_wght-webfont.woff2') format('woff2'),
+        url('fonts/robotocondensed-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -9,9 +27,9 @@ body {
 }
 
 .container {
-  display: flex; 
-  height: 100vh; 
-  width: 100vw; 
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
 .image-section {
@@ -37,6 +55,10 @@ body {
     color: white;
     top: 30%;
     text-align: center;
+    font: 5rem "audiowide",
+        monospace;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .form-section {

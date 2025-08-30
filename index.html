@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<!--
+    <!--
 Two main containers:
 1 - Left hand image.  Image should fit 30%-40% of width and full height
     - Image has an opaque square over the middle of it which displays text and an icon of some form (Build an SVG?)
@@ -27,10 +29,44 @@ Two main containers:
         <div class="image-section">
             <img src="space.jpg" class="image">
             <div class="image-text">
-                <p class="title-text">Move to Mars</p>
+                <p class="title-text">STARGAZER</p>
             </div>
         </div>
-        <div class="form-section"></div>
+        <div class="form-section">
+            <div class="top">
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up now to get started</p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="middle"></div>
+            <form action="https://httpbin.org/post" method="post">
+                <h2>Let's do this!</h2>
+                <div> <!--First name & Last Name-->
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div><!--email & phone number-->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" name="phone_number" id="phone_number">
+                </div>
+                <div><!--password & confirm password-->
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <label for="confirm_password">Confirm password</label>
+                    <input type="confirm_password" name="confirm_password" id="confirm_password">
+                </div>
+            </form>
+            <div class="bottom">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="login">Log in</a></p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
