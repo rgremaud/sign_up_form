@@ -35,23 +35,14 @@ body {
 }
 
 .image-section {
-    background-color: blue;
     flex: 1;
     flex-basis: 40%;
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    background: url("space.jpg") center center;
 }
 
 .image-text {
-    width: 40%;
+    width: 100%;
     height: 20%;
-    font-size: clamp(1vw, 5vw, 5vw);
-    position: absolute;
     background: black;
     opacity: 0.6;
     color: white;
@@ -59,8 +50,10 @@ body {
     text-align: center;
     font: 5rem "audiowide",
         monospace;
-    font-style: normal;
     font-weight: 500;
+    margin-top: 40%;
+    padding-top: 5%;
+    font-size: clamp(1vw, 5vw, 5vw);
 }
 
 .form-section {
@@ -88,15 +81,15 @@ body {
 .bottom {
     height: 30%;
     background-color: #F6F7F8;
-    color: #b4b4b4;
+    color: black;
     font-size: 1rem;
 }
 
 .top-text,
-label,
 h2,
 button,
-.bottom-text {
+.bottom-text,
+.form_row {
     margin-left: 50px;
 }
 
