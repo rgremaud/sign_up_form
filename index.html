@@ -34,36 +34,37 @@ Two main containers:
         </div>
         <div class="form-section">
             <div class="top">
-                <p>This is not a real online service! You know you need something
+                <p class="top-text">This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams.</p>
-                <p>Sign up now to get started</p>
-                <p>You know you want to.</p>
+                <p class="top-text">Sign up now to get started</p>
+                <p class="top-text last-line">You know you want to.</p>
             </div>
-            <div class="middle"></div>
+            <div class="middle">
             <form action="https://httpbin.org/post" method="post">
                 <h2>Let's do this!</h2>
-                <div> <!--First name & Last Name-->
+                <div> 
                     <label for="first_name">First Name</label>
                     <input type="text" name="first_name" id="first_name">
                     <label for="last_name">Last Name</label>
                     <input type="text" name="last_name" id="last_name">
                 </div>
-                <div><!--email & phone number-->
+                <div>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
                     <label for="phone_number">Phone Number</label>
                     <input type="number" name="phone_number" id="phone_number">
                 </div>
-                <div><!--password & confirm password-->
+                <div>
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password">
                     <label for="confirm_password">Confirm password</label>
                     <input type="confirm_password" name="confirm_password" id="confirm_password">
                 </div>
             </form>
+            </div>
             <div class="bottom">
                 <button>Create Account</button>
-                <p>Already have an account? <a href="login">Log in</a></p>
+                <p class="bottom-text">Already have an account? <a href="login">Log in</a></p>
             </div>
         </div>
     </div>
