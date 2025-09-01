@@ -9,22 +9,6 @@
 </head>
 
 <body>
-    <!--
-Two main containers:
-1 - Left hand image.  Image should fit 30%-40% of width and full height
-    - Image has an opaque square over the middle of it which displays text and an icon of some form (Build an SVG?)
-2 - Right hand form.  
-    - Form has 3 sections
-        1 - Top half shows the text for site - light color
-        2 - Middle is the actual form with following entries - darker shade of similar color
-            Row 1: <p> Lets do this </p>
-            Row 2: form with First Name: - Last Name
-            Row 3: email - phone number
-            Row 4: Password - Confirm Password
-        3 - button for Create Account - color match to 1
-            <p>Already have an account? Login </P
-    
--->
     <div class="container">
         <div class="image-section">
             <div class="image-text">
@@ -42,7 +26,7 @@ Two main containers:
             <div class="middle">
                 <form action="https://httpbin.org/post" method="post">
                     <h2>Let's do this!</h2>
-                    <div class="form_row_1">
+                    <div class="form_row">
                         <div class="form_group">
                             <label for="first_name" class="first_name">First Name</label>
                             <input type="text" name="first_name" id="first_name" class="first_name">
@@ -53,16 +37,24 @@ Two main containers:
                         </div>
                     </div>
                     <div class="form_row">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="number" name="phone_number" id="phone_number">
+                        <div class="form_group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form_group">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" name="phone_number" id="phone_number">
+                        </div>
                     </div>
                     <div class="form_row">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                        <label for="confirm_password">Confirm password</label>
-                        <input type="confirm_password" name="confirm_password" id="confirm_password">
+                        <div class="form_group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="form_group">
+                            <label for="confirm_password">Confirm password</label>
+                            <input type="password" name="confirm_password" id="confirm_password">
+                        </div>
                     </div>
                 </form>
             </div>
