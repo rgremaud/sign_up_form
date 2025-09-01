@@ -40,21 +40,32 @@ body {
     background: url("space.jpg") center center;
 }
 
-
-.title-text {
+.image-text {
     width: 100%;
-    height: 20%;
+    height: 15%;
     background: black;
     opacity: 0.6;
-    color: white;
-    top: 30%;
-    text-align: center;
-    font: 5rem "audiowide",
-        monospace;
-    font-weight: 500;
     margin-top: 40%;
-    padding-top: 5%;
-    font-size: clamp(1vw, 5vw, 5vw);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.image-text img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.title-text {
+    color: white;
+    text-align: center;
+    font-family: "audiowide", Arial, sans-serif;
+    font-weight: 500;
+    font-size: clamp(1vw, 4.75vw, 5vw);
+    flex-shrink: 1;
+    margin-top: 1vh;
 }
 
 
@@ -96,40 +107,64 @@ button,
     margin-left: 50px;
 }
 
+.form_row_1 {
+    display: flex;
+    gap: 20px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group label {
+    /* adjust this styling */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_group input[type="text"] {
+    /* adjust this styling */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 .last-line {
     padding-top: 1rem;
 }
 
 button {
-  font: 1rem "roboto_condensed", monospace;
-  font-weight: bold;
+    font: 1rem "roboto_condensed", monospace;
+    font-weight: bold;
 
-  margin-top: 20px;
+    margin-top: 20px;
 
-  color: #FFFFFF;
-  background-color: #191970;
+    color: #FFFFFF;
+    background-color: #191970;
 
-  border: none;
-  border-radius: 10px;
+    border: none;
+    border-radius: 10px;
 
-  padding: 8px 40px;
-  cursor: pointer;
+    padding: 8px 40px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #4682B4;
+    background-color: #4682B4;
 }
 
 button:active {
-  background-color: #407FC7;
+    background-color: #407FC7;
 }
 
-a:link { 
+a:link {
     font-weight: bold;
     text-decoration: none;
     color: #191970;
 }
 
-a:hover { 
+a:hover {
     color: #4682B4;
 }
