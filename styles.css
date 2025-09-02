@@ -48,7 +48,6 @@ body {
     margin-top: 40%;
     display: flex;
     flex-direction: row;
-
 }
 
 .image-text img {
@@ -66,6 +65,13 @@ body {
     font-size: clamp(1vw, 4.75vw, 5vw);
     flex-shrink: 1;
     margin-top: 1vh;
+}
+
+.credit-text {
+    color: white;
+    text-align: center;
+    font-family: "roboto_condensed", Arial, sans-serif;
+    margin-top: 62%;
 }
 
 
@@ -137,6 +143,25 @@ input[type="password"] {
     border-radius: 4px;
 }
 
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="password"]:hover {
+    border: 1px solid #FFD580;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    background-color: #E1EBEE
+}
+
+input[type="email"]:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
 
 .bottom {
     height: 30%;
